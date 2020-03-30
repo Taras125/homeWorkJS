@@ -1,14 +1,20 @@
-let circleRadius = Math.floor(Math.random(9) * 101);
+function random(min, max) {
+  // from https://javascript.info/task/random-min-max
+  let random = min + Math.random() * (max - min)
+  return Math.floor(random);
+}
 
 function calculateCircumLength(circleRadius) {
-    return Math.PI * (circleRadius + circleRadius);
-};
+  let length = Math.PI * Math.sqrt(circleRadius);
+  return Math.floor(length);
+}
 
 function calculateCircumArea(circleRadius) {
-    return 2 * Math.PI * circleRadius;
-};
-  console.log(circleRadius);
-  console.log(calculateCircumLength(1));
-  console.log(calculateCircumArea(2));
+  let area = 2 * Math.PI * circleRadius;
+  return Math.floor(area);
+}
 
- 
+let circleRadius = random(10, 100);
+console.log("Radius: " + circleRadius);
+console.log("Circum Length: " + calculateCircumLength(circleRadius));
+console.log("Circum Area: " + calculateCircumArea(circleRadius));
