@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-color: grey;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Currency Rates</h5>
+                        <h6>Dollar(USD) 1 = 27.3 grn;</h6>
+                        <h6>Euro(EUR) 1 = 29 grn;</h6>
+                        <h6>Zloty(PLN) 1 = 6,15 grn;</h6>
+                        <h6>Ruble(RUB) 1 = 3,59 grn;</h6>
+                        <h6>Pound(GBP) 1 = 30,9 grn;</h6>
+                        <h5 class="card-title">Calculating Currency</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Please enter currency</h6>
+                        <div class="form-group">
+                            <label for="currencySelecter"></label>
+                            <select class="form-control" id="currencySelecter">
+                                <option>USD</option>
+                                <option>EUR</option>
+                                <option>PLN</option>
+                                <option>RUB</option>
+                                <option>GBP</option>
+                            </select>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Please enter sum</h6>
+                        <div class="form-group">
+                            <label for="result"></label>
+                            <input class="form-control" id="result" type="text" placeholder="enter">
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Please enter the currency of the exchange</h6>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="calculateButton">Calculate</button>
+                            <p>GRN: <span id="outputGrn"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="form.js">FormScript</script>
+</body>
